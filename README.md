@@ -6,6 +6,8 @@ Temperature sensing application for raspi made with node.js. Includes graphs and
 
 Installation
 ------------
+The application is set for using digital sensors (i used ds18b20), but it should be fairly easily modified to accomodate other kinds of sensors too.
+
 PiTherm can be set to use almost any database, but atm. only rrd "driver" is supplied. For this your raspi needs to have RRDTool installed.
 
 PiTherm runs on node.js so get it (or compile) for your raspi.
