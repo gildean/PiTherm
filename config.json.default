@@ -1,0 +1,73 @@
+{
+    "name": "PiTherm",
+    "port": 30000,
+
+    "refreshrate": 30000,
+
+    "theme": "day",
+
+    "sensors": {
+        "temperature": {
+            "sensor_1": "/sys/bus/w1/devices/28-000004aaffff/w1_slave",
+            "sensor_2": "/sys/bus/w1/devices/28-000004aaffff/w1_slave"
+        }
+    },
+
+    "alerts": {
+        "sensor_1": {
+            "high": 40, 
+            "low": -10
+        },
+        "sensor_2": {   
+            "high": 40, 
+            "low": -1
+        }
+    },
+
+    "db": {
+        "name": "rrd",
+        "config": {
+            "filename":"/some/path/for/the/file.rrd",
+            "dss": {
+                "sensor_1": { 
+                    "type":"GAUGE",
+                    "min": -30,
+                    "max": 60,
+                    "heartbeat": 200
+                },
+                "sensor_2": { 
+                    "type":"GAUGE",
+                    "min": -30,
+                    "max": 60,
+                    "heartbeat": 200
+                }
+            },
+            "rra": {
+                "HOUR": {
+                    "cf": "LAST",
+                    "xff": 0.5,
+                    "steps": 1,
+                    "rows": 180
+                },
+                "DAY": {
+                    "cf": "AVERAGE",
+                    "xff": 0.5,
+                    "steps": 5,
+                    "rows": 288
+                },
+                "MONTH": {
+                    "cf": "AVERAGE",
+                    "xff": 0.5,
+                    "steps": 60,
+                    "rows": 720 
+                },
+                "YEAR": {
+                    "cf": "AVERAGE",
+                    "xff": 0.5,
+                    "steps": 288,
+                    "rows": 365
+                }
+            }
+        }    
+    }
+}

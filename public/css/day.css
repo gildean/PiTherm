@@ -1,0 +1,162 @@
+
+body {
+    color: hsla(228, 100%, 6%, 1);
+    text-shadow: -1px 1px 1px hsla(0,100%,0,0.2);
+    background: hsl(168, 76%, 42%);
+}
+
+#topbar {
+    background: hsl(48, 89%, 50%);
+}
+
+.uparrow {
+    border-color: transparent transparent hsl(28, 80%, 52%) transparent;
+}
+
+.downarrow {
+    border-color: hsl(37, 90%, 51%) transparent transparent transparent;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(192, 15%, 94%);
+    font-size: 1.1em;
+   -webkit-text-fill-color: hsl(192, 15%, 94%);
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: hsl(28, 80%, 52%);
+}
+
+
+.logolink:hover .red {
+    color: hsl(6, 78%, 57%);
+   -webkit-text-fill-color: hsl(6, 78%, 57%);
+}
+
+
+#current {
+    background: hsl(37, 90%, 51%);
+}
+
+#hour {
+    background: hsl(28, 80%, 52%)
+}
+
+#day {
+    background: hsl(24, 100%, 41%)
+}
+
+#month {
+    background: hsl(6, 63%, 46%)
+}
+
+.normal {
+    color: hsla(0,100%,0%,0.5);
+}
+
+.normal:hover, .normal:active {
+    cursor: pointer;
+    color: hsl(192, 15%, 94%);
+}
+
+.clicked {
+    color: hsl(192, 15%, 94%);
+}
+
+.current {
+    border-bottom: 10px solid hsl(37, 90%, 51%);
+}
+
+.hour {
+    border-bottom: 10px solid hsl(28, 80%, 52%);
+}
+
+.day {
+    border-bottom: 10px solid hsl(24, 100%, 41%);
+}
+
+.month {
+    border-bottom: 10px solid hsl(6, 63%, 46%);
+}
+
+.mainView {
+    background-color: hsl(192, 15%, 94%);
+}
+
+.loading {   
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-attachment:fixed;
+    background-position: 50% 40%;
+    background-image: url('data:image/gif;base64,R0lGODlhEAAQAPIAAOzw8X+MjdLY2Zulpn+Mjamxsra+v73ExSH+GkNyZWF0ZWQgd2l0aCBhamF4bG9hZC5pbmZvACH5BAAKAAAAIf8LTkVUU0NBUEUyLjADAQAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQACgABACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkEAAoAAgAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkEAAoAAwAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkEAAoABAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQACgAFACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQACgAGACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAAKAAcALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==');
+}
+
+.sensorH {
+    color: hsla(228, 100%, 6%, 1);
+}
+
+#fullscreen, #listscreen {
+    color: hsla(0,100%,0%,0.1);
+    z-index: 1000;
+    transition: color 0.3s ease-in-out;
+}
+
+#fullscreen:hover, #listscreen:hover {
+    cursor: pointer;
+    color: hsla(0,100%,0%,0.4);
+}
+
+.stat, .liststat {
+    color: hsl(184, 6%, 53%);
+    border-bottom: 1px solid hsl(184, 9%, 62%);
+}
+
+.checkingtime {
+    color: hsl(192, 15%, 94%);
+    border-top: 10px solid hsl(204, 64%, 44%);
+    border-bottom: 10px solid hsl(168, 76%, 36%);
+    background: hsl(204, 70%, 53%);
+}
+
+.mountain {
+      border-color: transparent transparent hsl(203, 61%, 38%) transparent;
+}
+
+.mountain2 {
+    border-color: transparent transparent hsl(203, 61%, 38%) transparent
+}
+
+.lastcheck {
+    border-bottom: 1px solid hsl(192, 15%, 94%);
+
+}
+
+rect {
+    fill: hsl(192, 15%, 94%);
+}
+
+circle, .line {
+    fill: none;
+    stroke: hsla(0, 100%, 0%, 0.4);
+    stroke-width: 2px;
+}
+
+circle {
+    fill: hsl(204, 70%, 53%);
+    fill-opacity: 0.9;
+    cursor: pointer;
+}
+
+circle.selected {
+    fill: hsl(48, 89%, 50%);
+    stroke: hsl(28, 80%, 52%);
+}
+
+circle:hover {
+    fill: hsl(48, 89%, 50%);
+    stroke: hsl(204, 70%, 53%);
+}
+
+circle.selected:hover {
+    fill: hsl(48, 89%, 50%);
+    stroke: hsl(37, 90%, 51%);
+}

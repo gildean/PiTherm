@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title></title>
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1" />
+    </head>
+    <body>
+        <div id="topbar" class="current">
+            <a class="logolink" href="./">
+                <div class="arrows">
+                    <span class="uparrow"></span>
+                    <span class="downarrow"></span>
+                </div>
+                <h1></h1>
+            </a>
+            <div class="buttons" id="buttons">
+                <span id="month" class="normal">720h</span>
+                <span id="day" class="normal"> 24h</span>
+                <span id="hour" class="normal">3h</span>
+                <span id="current" class="normal clicked">1h</span>
+            </div>
+        </div>
+        <div id="main" class="mainView"></div>
+        <div id="graphWrap" class="mainView" style="display:none">
+            <span id="fullscreen">↗</span>            
+            <span id="listscreen">✎</span>
+            <div id="graphHour" class="graphView"></div>
+            <div id="listHour" class="listView"></div>
+            <div id="graphDay" class="graphView"></div>
+            <div id="listDay" class="listView"></div>
+            <div id="graphMonth" class="graphView"></div>
+            <div id="listMonth" class="listView"></div>
+        </div>
+        <div id="checkingtime" class="checkingtime">
+            <div id="lastcheck" class="lastcheck"></div>
+            <span class="mountain"></span>
+            <span class="mountain2"></span>
+         </div>
+         <script src="js/script.js"></script>
+    </body>
+</html>

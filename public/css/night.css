@@ -1,0 +1,140 @@
+body {
+    color: hsla(0,100%,0,0.8);
+    text-shadow: -1px 1px 1px hsla(0,100%,0,0.2);
+    background: hsl(188, 47%, 45%);
+}
+
+#topbar {
+    background: hsl(190, 72%, 66%);
+}
+
+#uparrow {
+    border-color: transparent transparent hsl(189, 47%, 50%) transparent;
+}
+
+#downarrow {
+    border-color: hsl(190, 69%, 58%) transparent transparent transparent;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(192, 15%, 94%);
+    font-size: 1.1em;
+   -webkit-text-fill-color: #ecf0f1;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #fcfcfc;
+}
+
+
+#logolink:hover .red {
+    color: hsl(0, 0%, 33%);
+   -webkit-text-fill-color: hsl(0, 0%, 33%);
+}
+
+
+#current {
+    background: hsl(177, 42%, 76%);
+}
+
+#hour {
+    background: hsl(70, 31%, 85%)
+}
+
+#day {
+    background: hsl(26, 89%, 57%)
+}
+
+#month {
+    background: hsl(25, 100%, 49%)
+}
+
+.normal:hover, .normal:active, .clicked {
+    cursor: pointer;
+    color: hsl(0, 0%, 0%);
+}
+
+.current {
+    border-bottom: 10px solid hsl(177, 42%, 76%);
+}
+
+.hour {
+    border-bottom: 10px solid hsl(70, 31%, 85%);
+}
+
+.day {
+    border-bottom: 10px solid hsl(26, 89%, 57%);
+}
+
+.month {
+    border-bottom: 10px solid hsl(25, 100%, 49%);
+}
+
+#graphWrap, #main {
+    background-color: hsl(192, 15%, 94%);
+}
+
+.loading {   
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-attachment:fixed;
+    background-position: 50% 40%;
+    background-image: url('data:image/gif;base64,R0lGODlhEAAQAPIAAOzw8X+MjdLY2Zulpn+Mjamxsra+v73ExSH+GkNyZWF0ZWQgd2l0aCBhamF4bG9hZC5pbmZvACH5BAAKAAAAIf8LTkVUU0NBUEUyLjADAQAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQACgABACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkEAAoAAgAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkEAAoAAwAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkEAAoABAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQACgAFACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQACgAGACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAAKAAcALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==');
+}
+
+.stat {
+    color: hsl(0, 0%, 20%);
+    border-bottom: 1px solid #666;
+}
+
+#checkingtime {
+    color: #ecf0f1;
+    border-top: 10px solid hsla(0,100%,0,0.2);
+    border-bottom: 10px solid hsla(0,100%,0,0.2);
+    background: hsl(190, 69%, 58%);
+}
+
+#mountain, #mountain2 {
+      border-color: transparent transparent hsl(189, 47%, 50%) transparent;
+}
+
+#lastcheck {
+    border-bottom: 1px solid hsl(192, 15%, 94%);
+
+}
+
+rect {
+    fill: hsl(192, 15%, 94%);
+}
+
+circle, .line {
+    fill: none;
+    stroke: hsl(0, 0%, 5%);
+    stroke-width: 2px;
+}
+
+circle {
+    fill: hsl(25, 100%, 49%);
+    fill-opacity: 0.9;
+    cursor: pointer;
+}
+
+circle.selected {
+    fill: hsl(25, 100%, 49%);
+    stroke: hsl(0, 0%, 67%);
+}
+
+circle:hover {
+    fill: hsl(25, 100%, 49%);
+    stroke: hsl(0, 0%, 67%);
+}
+
+circle.selected:hover {
+    fill: hsl(25, 100%, 49%);
+    stroke: hsl(0, 0%, 67%);
+}
+
+.currentData {
+    position: fixed;
+    top: 5em;
+    left: 40%;
+}

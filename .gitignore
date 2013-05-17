@@ -7,8 +7,10 @@ lib-cov
 *.pid
 *.gz
 
+db
 pids
 logs
 results
 
 npm-debug.log
+config.json
