@@ -20,11 +20,11 @@ function app(req, res) {
     if (routed.hasOwnProperty(req.url)) {
         var resFile = routed[req.url];
         var reqHeaders = req.headers;
+        var resHeaders = headers(resFile.mtime);
         if (reqHeaders['if-none-match'] === resFile.etag) {
             res.writeHead(304, resHeaders);
             return res.end();
         }
-        var resHeaders = headers(resFile.mtime);
         var acceptEncoding = reqHeaders['accept-encoding'];
         resHeaders['ETag'] = resFile.etag;
         resHeaders['Content-Type'] = resFile.type;
@@ -33,15 +33,14 @@ function app(req, res) {
             if (gzipd) {
                 resHeaders['content-encoding'] = gzipd[0];
                 res.writeHead(200, resHeaders);
-                res.end(resFile[gzipd[0]]);
+                return res.end(resFile[gzipd[0]]);
             }
-        } else {
-            res.writeHead(200, resHeaders);
-            res.end(resFile.file);
         }
+        res.writeHead(200, resHeaders);
+        return res.end(resFile.file);
     } else {
         res.statusCode = 418;
-        res.end(coffee);
+        return res.end(coffee);
     }
 }
 
