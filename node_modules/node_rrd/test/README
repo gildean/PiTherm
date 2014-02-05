@@ -1,6 +1,0 @@
-The tests are written for mocha (http://visionmedia.github.com/mocha/)
-
-To run the tests simply type:
-
-$ cd test
-$ make

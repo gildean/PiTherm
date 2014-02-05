@@ -1,6 +1,6 @@
 {
   "name": "PiTherm",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Olli K (olli@salaliitto.com)",
   "description": "Web-based thermometer from a raspi",
   "keywords": [
@@ -11,10 +11,15 @@
   "engines": {
     "node": ">=0.8.0"
   },
-  "main": "./app",
+  "preferGlobal": "true",
+  "bin": {
+    "pitherm": "./app"
+  },
+  "main": "app",
   "dependencies": {
     "async": "~0.2.8",
-    "websocket": "~1.0.8"
+    "websocket": "~1.0.8",
+    "node_rrd": "git+https://github.com/Orion98MC/node_rrd"
   },
   "repository": {
     "type": "git",
