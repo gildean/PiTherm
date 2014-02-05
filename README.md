@@ -14,7 +14,7 @@ PiTherm runs on node.js so get it (or compile) for your raspi.
 
 Clone this repo somewhere on your pi, set your settings in a file called `config.json` (check the default config for help).
 
-Install modules with `npm install` or if you want to install the app to your path, use `sudo npm install -g` (note that this requires you to copy the config by hand to the install dir `/usr/local/lib/node_modules/pitherm')
+Install modules with `npm install` or if you want to install the app to your path, use `sudo npm install -g` (note that this requires you to copy the config to the install dir `/usr/local/lib/node_modules/pitherm`)
 
 Then just run the server with `./app` or with global install `pitherm`.
 
